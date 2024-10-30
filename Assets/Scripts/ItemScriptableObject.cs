@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -9,10 +10,12 @@ namespace Assets.Scripts
     {
         public Sprite Icon;
         public string Name;
+        public int Price;
         public ItemType ItemType;
         public WeaponSettings WeaponSettings;
         public Vector2Int ExtensionSize;
-        
+
+        public List<CustomEffect> Effects;
     }
 
     [Serializable]
@@ -24,5 +27,22 @@ namespace Assets.Scripts
         [Range(0f, 1f)]
         public float Accuracy;
         public float Stamina;
+    }
+
+    [Serializable]
+    public class CustomEffect
+    {
+        public string Name;
+        public EffectType EffectType;
+
+        public float DelayTime;
+
+        public EventType eventType;
+
+
+        public CustomEffect()
+        {
+            Name = "New Custom Effect";
+        }
     }
 }
