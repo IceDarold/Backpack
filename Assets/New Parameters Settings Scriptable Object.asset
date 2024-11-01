@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6118b4bd5e47f34d999f22029e3874f, type: 3}
   m_Name: New Parameters Settings Scriptable Object
   m_EditorClassIdentifier: 
-  parameters: []
+  parameters:
+  - ParameterType: 0
+    MaxParameterType: 1
+    StartValue: 20.26
+  - ParameterType: 1
+    MaxParameterType: 1
+    StartValue: 10000

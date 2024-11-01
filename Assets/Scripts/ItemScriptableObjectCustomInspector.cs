@@ -122,13 +122,13 @@ namespace Assets.Scripts
 
             if(effect.ImpactType == ImpactType.ChangeParameter)
             {
-                
+                effect.ParameterType = (ParameterType)EditorGUILayout.EnumPopup("Parameter Type",effect.ParameterType);
 
                     
                 
             }
 
-            
+            EditorUtility.SetDirty(so);
         }
     }
 }

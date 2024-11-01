@@ -42,6 +42,8 @@ namespace Assets.Scripts
 
         public ImpactType ImpactType;
         public ParameterType ParameterType;
+        public MeasureType MeasureType;
+        public float Impact;
 
 
         public CustomEffect()
