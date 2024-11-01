@@ -13,12 +13,21 @@ MonoBehaviour:
   m_Name: GameItems_Items
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Name: 
-  ItemType: 0
+  Name: NAme
+  Price: 0
+  ItemType: 2
   WeaponSettings:
     MinDamage: 0
     MaxDamage: 0
     ReloadingTime: 0
-    Accuracy: 0
+    Accuracy: 0.161
     Stamina: 0
   ExtensionSize: {x: 0, y: 0}
+  Effects:
+  - Name: New Custom Effect
+    EffectType: 1
+    Chance: 0
+    DelayTime: 0
+    eventType: 1
+    ImpactType: 0
+    ParameterType: 0

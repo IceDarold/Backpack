@@ -34,10 +34,14 @@ namespace Assets.Scripts
     {
         public string Name;
         public EffectType EffectType;
+        public float Chance;
 
         public float DelayTime;
 
         public EventType eventType;
+
+        public ImpactType ImpactType;
+        public ParameterType ParameterType;
 
 
         public CustomEffect()
