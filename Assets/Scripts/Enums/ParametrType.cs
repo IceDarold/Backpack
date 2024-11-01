@@ -1,5 +1,6 @@
 public enum ParameterType 
  { 
 Health,
-TestParameter,
+Mana,
+Stregth,
 }
