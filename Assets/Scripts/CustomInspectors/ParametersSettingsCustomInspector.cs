@@ -140,6 +140,7 @@ public class ParametersSettingsCustomInspector : Editor
                 {
                     var param = new Parameter();
                     param.ParameterType = (ParameterType)i;
+                    param.MaxParameterType = (ParameterType)i;
                     so.parameters.Add(param);
 
                 }

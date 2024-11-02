@@ -29,5 +29,7 @@ MonoBehaviour:
     Chance: 0
     DelayTime: 0
     eventType: 1
-    ImpactType: 0
+    ImpactType: 1
     ParameterType: 0
+    MeasureType: 0
+    Impact: 0

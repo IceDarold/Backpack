@@ -19,3 +19,6 @@ MonoBehaviour:
   - ParameterType: 1
     MaxParameterType: 1
     StartValue: 10000
+  - ParameterType: 2
+    MaxParameterType: 0
+    StartValue: 0

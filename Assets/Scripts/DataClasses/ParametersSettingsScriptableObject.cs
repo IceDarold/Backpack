@@ -43,13 +43,4 @@ public class ParametersSettingsScriptableObject : ScriptableObject
     }
 }
 
-[Serializable]
-public class Parameter
-{
-   [SerializeField] public ParameterType ParameterType;
-   [SerializeField] public ParameterType MaxParameterType;
-   [SerializeField] public float StartValue;
-   
 
-    public Parameter() { }
-}

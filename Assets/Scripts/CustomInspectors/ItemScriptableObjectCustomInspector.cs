@@ -122,10 +122,16 @@ namespace Assets.Scripts
 
             if(effect.ImpactType == ImpactType.ChangeParameter)
             {
-                effect.ParameterType = (ParameterType)EditorGUILayout.EnumPopup("Parameter Type",effect.ParameterType);
-
+                effect.Impact.ParameterType = (ParameterType)EditorGUILayout.EnumPopup("Parameter Type",effect.Impact.ParameterType);
+                effect.Impact.MeasureType = (MeasureType) EditorGUILayout.EnumPopup("Measure Type",effect.Impact.MeasureType);
+                effect.Impact.ImpactValue = EditorGUILayout.FloatField("Impact Value", effect.Impact.ImpactValue);
                     
-                
+            }
+
+            if(effect.ImpactType == ImpactType.BuffDebuff)
+            {
+                effect.ImpactBuff.BuffBase = (BuffBase)EditorGUILayout.ObjectField("Buff Base",effect.ImpactBuff.BuffBase,typeof(BuffBase),allowSceneObjects: false);
+                effect.ImpactBuff.count = EditorGUILayout.IntField("Count", effect.ImpactBuff.count);
             }
 
             EditorUtility.SetDirty(so);
