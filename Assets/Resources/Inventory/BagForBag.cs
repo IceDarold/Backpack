@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class BagForBag : MonoBehaviour
 {
     [SerializeField]
-    private Image EnablingImage; 
+    protected Image EnablingImage; 
     [SerializeField]
-    private Image BanningImage;
+    protected Image BanningImage;
+
+    public BagForItem BagForItem;
 
     public bool IsBusy = false;
-    public BagForItem BagForItem;
     
     public void ChangeEnablingImageActivity(bool ativity)
     {

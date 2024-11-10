@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a00c5019d50ae4543ae0c1161d847cd1, type: 3}
   m_Name: BaseItemSettings
   m_EditorClassIdentifier: 
-  minDistanceForMove: 0.1
-  initialItemLifting: {x: 0, y: 50, z: 0}
-  forceMagnitude: 100
+  PlaceForBags: {fileID: 0}
+  MinDistanceForMove: 10
+  OffsetFromMOuse: {x: 0, y: 80, z: 0}
+  ForceMagnitude: 100
+  timeAfterDown: 1
